@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+/**
+696 340 km Soleil
+- 57 900 000 km -
+2 439,7 km Mercure
+- 50 300 000 km -
+6 051,8 km Vénus
+- 41 400 000 km -
+6 371 km Terre
+- 78 300 000 km -
+3 389,5 km Mars
+- 550 400 000 km -
+69 911 km Jupiter
+- 648 700 000 km -
+58 232 km Saturne
+- 1 444 000 000 km -
+25 362 km Uranus
+- 1 626 100 000 km -
+24 622 km Neptune
+*/
+
+:root {
+  --sun-color: #f9ca24;
+  --sun-alter-color: #fde58e;
+  --sun-size: min(400px, 100vw);
+
+  --mercury-color: #686de0;
+  --mercury-alter-color: #f0932b;
+  --mercury-size: calc(var(--sun-size) / 285);
+
+  --venus-color: #a06969;
+  --venus-alter-color: #e2c19a;
+  --venus-size: calc(var(--sun-size) / 115);
+
+  --earth-color: #2a11b4;
+  --earth-alter-color: #e7e6e6;
+  --earth-size: calc(var(--sun-size) / 109);
+
+  --mars-color: #99302e;
+  --mars-alter-color: #eb4d4b;
+  --mars-size: calc(var(--sun-size) / 205);
+
+  --jupiter-color: #f59e3b;
+  --jupiter-alter-color: #e7e6e6;
+  --jupiter-size: calc(var(--sun-size) / 9.9);
+
+  --saturn-color: #ffbe76;
+  --saturn-alter-color: #dfc79f;
+  --saturn-size: calc(var(--sun-size) / 11.9);
+
+  --uranus-color: #7ed6df;
+  --uranus-alter-color: #9b9b9b;
+  --uranus-size: calc(var(--sun-size) / 27.5);
+
+  --neptun-color: #7e95df;
+  --neptun-alter-color: #e2e2e2;
+  --neptun-size: calc(var(--sun-size) / 28.3);
+
+  --sun-to-mercury: calc(83 * var(--sun-size));
+  --mercury-to-venus: calc(72 * var(--sun-size));
+  --venus-to-earth: calc(59.5 * var(--sun-size));
+  --earth-to-mars: calc(112.4 * var(--sun-size));
+  --mars-to-jupiter: calc(790 * var(--sun-size));
+  --jupiter-to-saturn: calc(931.6 * var(--sun-size));
+  --saturn-to-uranus: calc(2073.7 * var(--sun-size));
+  --uranus-to-neptun: calc(2335.2 * var(--sun-size));
+}
+
+html {
+  font-family: 'Comfortaa', cursive;
+  background-color: black;
+  color: white;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.star,
+.planet {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.sun {
+  width: var(--sun-size);
+  height: var(--sun-size);
+  background: radial-gradient(var(--sun-color), var(--sun-alter-color));
+}
+
+.sun-to-mercury {
+  height: var(--sun-to-mercury);
+}
+
+.mercury {
+  width: var(--mercury-size);
+  height: var(--mercury-size);
+  background: radial-gradient(var(--mercury-color), var(--mercury-alter-color));
+}
+
+.mercury-to-venus {
+  height: var(--mercury-to-venus);
+}
+
+.venus {
+  width: var(--venus-size);
+  height: var(--venus-size);
+  background: radial-gradient(var(--venus-color), var(--venus-alter-color));
+}
+
+.venus-to-earth {
+  height: var(--venus-to-earth);
+}
+
+.earth {
+  width: var(--earth-size);
+  height: var(--earth-size);
+  background: radial-gradient(var(--earth-color), var(--earth-alter-color));
+}
+
+.earth-to-mars {
+  height: var(--earth-to-mars);
+}
+
+.mars {
+  width: var(--mars-size);
+  height: var(--mars-size);
+  background: radial-gradient(var(--mars-color), var(--mars-alter-color));
+}
+
+.mars-to-jupiter {
+  height: var(--mars-to-jupiter);
+}
+
+.jupiter {
+  width: var(--jupiter-size);
+  height: var(--jupiter-size);
+  background: radial-gradient(var(--jupiter-color), var(--jupiter-alter-color));
+}
+
+.jupiter-to-saturn {
+  height: var(--jupiter-to-saturn);
+}
+
+.saturn {
+  width: var(--saturn-size);
+  height: var(--saturn-size);
+  background: radial-gradient(var(--saturn-color), var(--saturn-alter-color));
+}
+
+.saturn-to-uranus {
+  height: var(--saturn-to-uranus);
+}
+
+.uranus {
+  width: var(--uranus-size);
+  height: var(--uranus-size);
+  background: radial-gradient(var(--uranus-color), var(--uranus-alter-color));
+}
+
+.uranus-to-neptun {
+  height: var(--uranus-to-neptun);
+}
+
+.neptun {
+  width: var(--neptun-size);
+  height: var(--neptun-size);
+  background: radial-gradient(var(--neptun-color), var(--neptun-alter-color));
+}
