@@ -67,24 +67,20 @@
   --uranus-to-neptun: calc(2335.2 * var(--sun-size));
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Comfortaa', cursive;
-  background-color: black;
   color: white;
+  background-color: black;
 }
 
 html,
 body {
-  height: 100vh;
   padding: 0;
   margin: 0;
-  overflow-y: hidden;
-}
-
-main {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
 }
 
 h1,
@@ -115,6 +111,10 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.distance p {
+  font-size: 2rem;
 }
 
 p {
