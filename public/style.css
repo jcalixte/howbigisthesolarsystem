@@ -215,3 +215,9 @@ p {
   height: var(--neptun-size);
   background: radial-gradient(var(--neptun-color), var(--neptun-alter-color));
 }
+
+.anchor {
+  color: white;
+  position: relative;
+  padding-top: 50vh;
+}
