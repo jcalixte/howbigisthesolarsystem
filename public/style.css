@@ -221,3 +221,7 @@ p {
   position: relative;
   padding-top: 50vh;
 }
+
+.anchor:focus-visible {
+  outline: none;
+}
