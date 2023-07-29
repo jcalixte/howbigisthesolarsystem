@@ -57,14 +57,14 @@
   --neptun-alter-color: #e2e2e2;
   --neptun-size: calc(var(--sun-size) / 28.3);
 
-  --sun-to-mercury: calc(83 * var(--sun-size));
-  --mercury-to-venus: calc(72 * var(--sun-size));
-  --venus-to-earth: calc(59.5 * var(--sun-size));
-  --earth-to-mars: calc(112.4 * var(--sun-size));
-  --mars-to-jupiter: calc(790 * var(--sun-size));
-  --jupiter-to-saturn: calc(931.6 * var(--sun-size));
-  --saturn-to-uranus: calc(2073.7 * var(--sun-size));
-  --uranus-to-neptun: calc(2335.2 * var(--sun-size));
+  --sun-to-mercury: calc(var(--sun-size) * 83);
+  --mercury-to-venus: calc(var(--sun-size) * 72);
+  --venus-to-earth: calc(var(--sun-size) * 59.5);
+  --earth-to-mars: calc(var(--sun-size) * 112.4);
+  --mars-to-jupiter: calc(var(--sun-size) * 790);
+  --jupiter-to-saturn: calc(var(--sun-size) * 931.6);
+  --saturn-to-uranus: calc(var(--sun-size) * 2073.7);
+  --uranus-to-neptun: calc(var(--sun-size) * 2335.2);
 }
 
 * {
